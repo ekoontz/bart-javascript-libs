@@ -17,14 +17,13 @@
   <body onload="search(from_station,to_station);">
     <h1>BART Widget</h1>
 
-    <div id="status" style="float:left;background:#00aa88;padding:1em;height:220px">
-
+    <div id="status">
 
       <div style="width:100%">
 	<table style="width:100%">
 
 	  <tr>
-	    <th>
+	    <th style="width:5em">
 	      <div id="from_station_div" style="float:left">
 	      </div>
 	    </th>
@@ -38,7 +37,7 @@
 	      <div id="to_station_div" style="float:right">
 	      </div>
 	    </th>
-	    <th style="width:5mm;">
+	    <th class="eta1">
 	      &#160;
 	    </th>
 	    </tr>
@@ -50,23 +49,55 @@
 
       <div style="width:100%;float:left;">
 	<table style="width:100%">
-	  <tr>
-	    <td style="width:25%">
-	      <img src="circle.png"/>
-	    </td>
-	    <td><img width="50px" src="yellow.png"/></td>
-	    <td>
-	      <img src="circle.png"/>
 
-	    </td>
-	    <td><img width="50px" src="red.png"/></td>
+	  <tr>
 	    <td>
+	      <img width="25px" src="circle.png"/>
 	    </td>
+	    <td><img height="20px" width="150px" src="yellow.png"/></td>
 	    <td>
-	      <img src="circle.png"/>
+	      <img src="circle.png" width="25px"/>
 	    </td>
-	    <td style="font-size:24pt">5 min</td>
+	    <td><img height="20px" width="150px" src="red.png"/></td>
+	    <td>
+	      <img width="25px" src="circle.png"/>
+	    </td>
+	    <td class="eta1" >5 min</td>
 	  </tr>
+
+
+
+
+	  <tr>
+	    <td>
+	      <img src="circle.png" width="25px"/>
+	    </td>
+	    <td><img height="20px" width="150px" src="orange.png"/></td>
+	    <td><img height="20px" width="25px" src="orange.png"/></td>
+	    <td><img height="20px" width="150px" src="orange.png"/></td>
+	    <td>
+	      <img src="circle.png" width="25px"/>
+	    </td>
+	    <td style="font-size:24pt;text-align:right">12 min</td>
+	  </tr>
+
+	  <tr>
+	    <td>
+	      <img src="circle.png" width="25px"/>
+	    </td>
+	    <td><img height="20px" width="150px" src="yellow.png"/></td>
+	    <td>
+	      <img src="circle.png" width="25px"/>
+	    </td>
+	    <td><img height="20px"width="150px" src="red.png"/></td>
+	    <td>
+	      <img src="circle.png" width="25px"/>
+	    </td>
+	    <td style="font-size:24pt;text-align:right">18 min</td>
+	  </tr>
+
+
+
 	</table>
       </div>
 
