@@ -1,12 +1,27 @@
+// Licenced under GPL v 3.0. 
+// http://www.gnu.org/licenses/gpl-3.0-standalone.html
+
 var db;
 var coundown_to_update = 0;
 //var online = true;
 var online = false;
 var bartEtaDoc;
 
+// the client HTML manipulates these two globals:
+var from_station;
+var to_station = "Ashby";
+
 // stub for client API..
-function search() {
-    alert('your train is coming...');
+function search(from_station,to_station) {
+    var status = document.getElementById("status");
+    from_station = "Powell";
+
+    var from_station_div = document.getElementById("from_station_div");
+    from_station_div.innerHTML = "<div><h2>"+from_station+"</h2></div>";
+    var to_station_div = document.getElementById("to_station_div");
+    to_station_div.innerHTML = "<div><h2>"+to_station+"</h2></div>";
+
+
 }
 
 function initDB() {
