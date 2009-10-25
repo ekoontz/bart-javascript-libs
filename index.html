@@ -13,8 +13,67 @@
 	  media="handheld, all" />
     <script type="text/javascript" src="bart.js"></script>
   </head>
-  <body onload="search();">
+
+  <body onload="search(from_station,to_station);">
     <h1>BART Widget</h1>
+
+    <div id="status" style="float:left;background:#00aa88;padding:1em;height:220px">
+
+
+      <div style="width:100%">
+	<table style="width:100%">
+
+	  <tr>
+	    <th>
+	      <div id="from_station_div" style="float:left">
+	      </div>
+	    </th>
+
+	    <th>
+	      <div style="transfer_div">
+		12TH ST
+	      </div>
+	    </th>
+	    <th>
+	      <div id="to_station_div" style="float:right">
+	      </div>
+	    </th>
+	    </tr>
+	  </table>
+
+	</div>
+
+
+
+      <div style="width:100%;float:left;">
+	<table style="width:100%">
+	  <tr>
+	    <td>
+	      <img src="circle.png"/>
+	    </td>
+	    <td><img width="50px" src="yellow.png"/></td>
+	    <td>
+	      <img src="circle.png"/>
+
+	    </td>
+	    <td><img width="50px" src="red.png"/></td>
+	    <td>
+	    </td>
+	    <td>
+	      <img src="circle.png"/>
+	    </td>
+	  </tr>
+	</table>
+      </div>
+
+
+    </div>
+    
+    <div style="float:right">
+      <img width="450px" src="http://www.bart.gov/images/global/system-map23.gif">
+      </img>
+    </div>
+
     
   </body>
 </html>
